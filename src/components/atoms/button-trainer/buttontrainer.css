@@ -1,9 +1,7 @@
-/* Container del botón */
 .containerButtonTrainer {
     position: relative;
 }
 
-/* Botón principal */
 .buttonTrainer {
     display: flex;
     align-items: center;
@@ -18,7 +16,6 @@
     background-image: linear-gradient(to right, #4200B1, #F9471C);
 }
 
-/* Círculo interior */
 .buttonTrainerCircle {
     display: flex;
     align-items: center;
@@ -33,7 +30,6 @@
     border-radius: 50%;
 }
 
-/* Imagen dentro del círculo */
 .buttonTrainerImg {
     width: 70%;
     height: auto;
