@@ -1,0 +1,12 @@
+.deleteButton{
+   border-radius: 50%;
+   width: 5em;
+   height: 5em;
+   background-color: #F9471C;
+   border-color: #F9471C;
+}
+
+.imgButton{
+    width: 50%;
+    height: 50%;
+}
