@@ -1,0 +1,12 @@
+.updateButton{
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    background-color: #2E315B;
+    border-color: #2E315B;
+ }
+ 
+ .imgButton{
+     width: 50%;
+     height: 50%;
+ }
