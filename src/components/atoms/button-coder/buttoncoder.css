@@ -13,7 +13,7 @@
     border-radius: 50%;
     border-style: none;
     background-clip: border-box;
-    background-image: linear-gradient(to right, #4200B1, #F9471C);
+    background-image: linear-gradient(to right, #F9471C, #4200B1);
 }
 
 .buttonCoderCircle {
