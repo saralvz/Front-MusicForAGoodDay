@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ButtonCoder from './components/atoms/atom-ButtonCoder/Atom-ButtonCoder';
+import Profile from './components/pages/profile/Profile';
 
 function App() {
   return (
     <div className="App">
-      <ButtonCoder />
+      <Profile />
     </div>
   );
 }
