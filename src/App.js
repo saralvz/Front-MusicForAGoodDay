@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ButtonTrainer from './components/atoms/button-trainer/ButtonTrainer';
+import ButtonTrainer from './components/atoms/atom-ButtonTrainer/Atom-ButtonTrainer';
 
 function App() {
   return (
