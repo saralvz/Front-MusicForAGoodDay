@@ -1,8 +1,9 @@
 import React from 'react'
 import SongBox from '../components/atoms/atom-songBox/atom-SongBox'
+import ShowSongBox from './ShowSongBox'
 
 const urlCreateSong = ''
-const urlGetSong = ''
+const urlReadSong = ''
 const urlEditSong = ''
 const urlDeleteSong = ''
 
@@ -42,7 +43,7 @@ function validateForm(e) {
     }
 }
 
-async function getSongs() {
+async function readSongs() {
     songsList = await fetch(urlGetSong)
     .then(response => response.json())
     .then(data => data)
@@ -50,17 +51,9 @@ async function getSongs() {
 
     showSong()
 }
-getSongs();
+readSongs();
 
-function showSong() {
-    const showSongBox = document.querySelector({SongBox}) //Aquí va el componente canciones, el contenedor donde almacenamos la info que recibimos.
-
-    songsList.forEach(song => { //hay que darle una vuelta a esto para que el componente pille los props del input
-        const {songID, songName, artistName, songGender, coderName, youtubeUrl, imgUrl} = song;
-
-    })
-}
-
+function ShowSongBox();
 
 
 

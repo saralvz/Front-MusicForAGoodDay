@@ -13,4 +13,4 @@ function ShowSongBox({ inputValues }) {
   );
 }
 
-export default MostrarComponente;
+export default ShowSongBox;
