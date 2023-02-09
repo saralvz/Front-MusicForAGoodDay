@@ -23,7 +23,7 @@ const SongBox = (props) => {
         </p>
       </div>
       <div className="play">
-        <PlayButton />
+        <PlayButton src={props.play}/>
       </div>
       <div className="optionsContainer">
         <div className="delete">
