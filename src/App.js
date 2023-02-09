@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import PlayButton from "./components/atoms/atom-playButton/atom-PlayButton";
+import SongBox from "./components/atoms/atom-songBox/atom-SongBox";
 
 function App() {
   return (
     <div className="App">
-      <PlayButton />
+      <SongBox />
     </div>
   );
 }
