@@ -1,0 +1,15 @@
+.playButton {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 4rem;
+    height: 2rem;
+    background-color: #2E315B;
+    color: white;
+    border: none;
+    margin-top: 2rem;
+}
+    
+
+.imgPlay{
+    width: 20%;
+}
