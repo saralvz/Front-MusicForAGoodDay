@@ -8,7 +8,8 @@ function ShowSongBox({ inputValues }) {
     songName={register.songName}
     artistName={register.artist}
     songGender={register.gender}
-    coderName={register.yourName}/>
+    coderName={register.yourName}
+    play={register.youtube}/>
   );
 }
 
