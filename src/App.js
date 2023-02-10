@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ButtonTrainer from './components/atoms/atom-ButtonTrainer/Atom-ButtonTrainer';
+import HiTrainer from './components/molecules/mol-hiTrainer/Mol-hiTrainer';
 
 function App() {
   return (
     <div className="App">
-      <ButtonTrainer />
+      <HiTrainer />
     </div>
   );
 }
