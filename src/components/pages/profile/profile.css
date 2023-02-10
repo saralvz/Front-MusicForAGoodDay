@@ -3,7 +3,8 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    /* background-image: url(../../../assets/img/background.png); */
+    /* background-image: url(../../../assets/img/background.png);
+    background-color: black; */
     background-size: cover;
 }
 
