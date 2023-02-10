@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import '../upLoad/upLoad.css'
+import '../form/form.css'
 
 const ValidationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
@@ -31,14 +31,14 @@ const ValidationForm = () => {
             <input className='input-group_label' type="text" {...register('yourName', {required:true})} placeholder="Enter your Name"/>
             {errors.yourName && <small className='fail'>This filed can not be empty</small>}
           </div>
-          <div className='form-control' id='img'>
+          <div className='form-control1' id='img'>
             <label className='input-group'>Image URL</label>
-            <input className='input-group_label' type="text" {...register('img', {required:true})} placeholder="Enter the URL of the image"/>
+            <input className='input-group_label1' type="text" {...register('img', {required:true})} placeholder="Enter the URL of the image"/>
             {errors.img && <small className='fail'>This filed can not be empty</small>}
           </div>
-          <div className='form-control' id='youtube'>
+          <div className='form-control2' id='youtube'>
             <label className='input-group'>YouTube URL</label>
-            <input className='input-group_label' type="text" {...register('youTube', {required:true})} placeholder="Enter the URL of YouTube"/>
+            <input className='input-group_label2' type="text" {...register('youTube', {required:true})} placeholder="Enter the URL of YouTube"/>
             {errors.youTube && <small className='fail'>This filed can not be empty</small>}
           </div>
           <button type='submit'>Done!</button>
