@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ButtonCoder from './components/atoms/atom-ButtonCoder/Atom-ButtonCoder';
+import HiCoder from './components/molecules/mol-hiCoder/Mol-HiCoder';
 
 function App() {
   return (
     <div className="App">
-      <ButtonCoder />
+      <HiCoder />
     </div>
   );
 }
