@@ -10,6 +10,11 @@
 }
     
 
-.imgPlay{
+.imgPlay {
     width: 20%;
+    max-width: 20px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: -30%;
 }
