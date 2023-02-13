@@ -1,0 +1,11 @@
+.App{
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    background-color: #2E315B;
+    background-image: linear-gradient(rgba(46, 49, 91, 0.9), rgba(46,49,91,0.3)), url('./assets/img/background.png'); 
+    background-size: cover; 
+    background-position: center; 
+    
+
+}
