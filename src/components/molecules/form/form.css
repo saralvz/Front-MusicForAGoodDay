@@ -6,7 +6,10 @@
     padding: 25px 30px;
     border-radius: 10px;
     margin-left: 50px;
+    display: flex;
+    font-family: "Consolas";
   }
+
   .form-react {
     display: flex;
     flex-wrap: wrap;
@@ -85,13 +88,17 @@
   }
   button {
     height: 45px;
-    width: calc(100% / .5 - 20px);
+   width: calc(100% / .5 - 20px); 
     border-radius: 20px;
     margin-top: 20px;
     background: #2e315b;
     color: white;
     margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
   .form-react button:hover {
     background-color: #3b3e74;
     transition: ease-in-out;
@@ -101,5 +108,3 @@
   .fail {
     color: #F9471C;
   }
-
-
