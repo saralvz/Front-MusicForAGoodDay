@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ValidationForm from './components/molecules/form/ValidationForm';
-import OrganismContainer from './components/organisms/OrganismContainer';
+import Profile from './components/pages/profile/Profile';
+
 function App() {
   return (
     <div className="App">
-     <OrganismContainer/>
+      <Profile />
     </div>
   );
 }
