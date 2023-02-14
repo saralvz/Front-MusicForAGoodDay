@@ -3,7 +3,7 @@ import '../profile/profile.css';
 import ButtonTrainer from '../../atoms/atom-ButtonTrainer/Atom-ButtonTrainer';
 import ButtonCoder from '../../atoms/atom-ButtonCoder/Atom-ButtonCoder';
 import LogoCT from '../../../assets/img/logo.svg';
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Profile() {
   return (
     <div className="containerProfile">
