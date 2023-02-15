@@ -1,7 +1,10 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import '../form/form.css'
+<<<<<<< HEAD
 
+=======
+>>>>>>> 630cd7b16e3b589b9229e3be4c0bc03758519ea8
 
 const ValidationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
@@ -42,7 +45,7 @@ const ValidationForm = () => {
             <input className='input-group_label' type="text" {...register('youTube', {required:true})} placeholder="Enter the URL of YouTube"/>
             {errors.youTube && <small className='fail'>This filed can not be empty</small>}
           </div>
-          <button type='submit'>Done!</button>
+          <button type='submit' id="btn">Done!</button>
         </form>
       </div>
     </>
@@ -50,3 +53,20 @@ const ValidationForm = () => {
 }
 
 export default ValidationForm
+
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+  const apiUrl = 'http://localhost:80/MusicForAGoodDay/songs/create';
+  
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      // haz algo con los datos recibidos de la API
+      console.log(data);
+    })
+    .catch(error => {
+      // maneja el error de la llamada a la API
+      console.error('Error fetching data:', error);
+    });
+});
