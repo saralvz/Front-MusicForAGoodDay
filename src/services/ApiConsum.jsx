@@ -1,10 +1,10 @@
 import React from 'react'
 import SongBox from '../components/atoms/atom-songBox/atom-SongBox'
 
-const urlCreateSong = ''
-const urlGetSong = ''
-const urlEditSong = ''
-const urlDeleteSong = ''
+const urlCreateSong = 'http://localhost:80/MusicForAGoodDay/songs/create'
+const urlGetSong = 'http://localhost:80/MusicForAGoodDay/songs/read'
+const urlEditSong = 'http://localhost:80/MusicForAGoodDay/songs/update'
+const urlDeleteSong = 'http://localhost:80/MusicForAGoodDay/songs/delete'
 
 let songsList = []
 
@@ -20,7 +20,7 @@ const songBox = {
     "users_id": '',
 };
 
-let editing = false;
+let listening = false;
 
 const form = document.querySelector('#form');
 
