@@ -1,14 +1,12 @@
-import React from 'react'
+import React, { startTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import '../form/form.css'
-<<<<<<< HEAD
 
-=======
->>>>>>> 630cd7b16e3b589b9229e3be4c0bc03758519ea8
 
 const ValidationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
   const customSubmit = (data) => {
+    console.log(data)
     alert('Validation passed')
   }
   return (
@@ -54,19 +52,4 @@ const ValidationForm = () => {
 
 export default ValidationForm
 
-const btn = document.getElementById('btn');
 
-btn.addEventListener('click', () => {
-  const apiUrl = 'http://localhost:80/MusicForAGoodDay/songs/create';
-  
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      // haz algo con los datos recibidos de la API
-      console.log(data);
-    })
-    .catch(error => {
-      // maneja el error de la llamada a la API
-      console.error('Error fetching data:', error);
-    });
-});
