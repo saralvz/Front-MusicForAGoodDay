@@ -1,9 +1,11 @@
 import React from "react";
+import OrganismContainer from "../../organisms/OrganismContainer";
+
 
 function Trainer() {
     return (
       <div>
-          <h1>Hola amigas</h1>
+          <OrganismContainer/>
       </div>
     );
   }
