@@ -50,19 +50,3 @@ const ValidationForm = () => {
 
 export default ValidationForm
 
-const btn = document.getElementById('btn');
-
-btn.addEventListener('click', () => {
-  const apiUrl = 'http://localhost:80/MusicForAGoodDay/songs/create';
-  
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      // haz algo con los datos recibidos de la API
-      console.log(data);
-    })
-    .catch(error => {
-      // maneja el error de la llamada a la API
-      console.error('Error fetching data:', error);
-    });
-});
