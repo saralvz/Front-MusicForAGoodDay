@@ -1,6 +1,10 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import '../form/form.css'
+<<<<<<< HEAD
+
+=======
+>>>>>>> 630cd7b16e3b589b9229e3be4c0bc03758519ea8
 
 const ValidationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()

@@ -5,8 +5,9 @@ import Profile from './components/pages/profile/Profile';
 import Coder from './components/pages/coder/Coder';
 import Trainer from './components/pages/trainer/Trainer';
 
+
 function App() {
-  return (
+  return (  
     <div className="App">
       <Router>
       <Routes>
