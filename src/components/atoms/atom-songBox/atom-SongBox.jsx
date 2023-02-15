@@ -18,7 +18,7 @@ const SongBox = (props) => {
       </div>
       <div className="coder">
         <p>
-          Proposed with <img src={heart} alt="heart" width="4%" /> by{" "}
+          Proposed with <img src={heart} alt="heart" width="15px" /> by{" "}
           {props.coderName} coder
         </p>
       </div>
