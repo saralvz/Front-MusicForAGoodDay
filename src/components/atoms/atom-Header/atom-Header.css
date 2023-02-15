@@ -1,0 +1,6 @@
+#logoHeader {
+    transform: scale(1.6);
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}

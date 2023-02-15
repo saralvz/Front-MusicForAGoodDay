@@ -5,7 +5,9 @@
   padding: 10px;
   justify-content: space-around;
   font-family: "Consolas";
-  width: 70%;
+  max-width: 95%;
+  margin-top: -20px;
+  margin-bottom: -10px;
 }
 
 .filter-input {
@@ -53,4 +55,37 @@ img {
 
 p {
     font-size: 16px;
-    margin: 0 1rem;}
+    margin: 0 1rem;
+}
+
+.filter-container {
+  cursor: pointer;
+}
+
+.filter-artist {
+  background-color: #D9D9D9;
+  max-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#filter-artist {
+  width: 15%;
+}
+
+.filter-played {
+  background-color: #D9D9D9;
+  max-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-unplayed {
+  background-color: #D9D9D9;
+  max-width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

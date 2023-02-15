@@ -5,7 +5,7 @@ import TrainerImg from '../../../../src/assets/img/icons/trainer.svg';
 function ButtonTrainer() {
   return (
     <button className="buttonTrainer">
-        <img className="buttonTrainerImg"
+        <img id="buttonTrainerImg"
             src={ TrainerImg }
             alt="Logo"
         />

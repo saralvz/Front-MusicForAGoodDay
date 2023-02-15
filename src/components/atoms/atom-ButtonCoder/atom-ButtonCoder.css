@@ -1,6 +1,6 @@
 .buttonCoder {
-    width: 15em;
-    height: 15em;
+    width: 200px;
+    height: 200px;
     background-color: #D9D9D9;
     border-radius: 50%;
     border-width: 0.7em;
@@ -12,8 +12,8 @@
     cursor: pointer;
 }
 
-.buttonCoderImg {
-    width: 65%;
+#buttonCoderImg {
+    transform: scale(1.9);
 }
 
 @keyframes buttonCoderGradient {

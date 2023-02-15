@@ -8,9 +8,14 @@ import ValidationForm from "../molecules/form/ValidationForm";
 const OrganismContainer = () => {
     return (
       <div className="organism-container">
-        <ValidationForm/>
-        <SongBox/>
-        <Filter />
+        <div className="content-wrapper">
+          <h2 id="form-title">
+            UPLOAD YOUR OWN SONGS
+          </h2>
+          <ValidationForm/>
+          <Filter />
+          <SongBox/>
+        </div>
       </div>
     );
   };

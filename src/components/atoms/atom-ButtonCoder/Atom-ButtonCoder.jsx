@@ -5,7 +5,7 @@ import CoderImg from '../../../assets/img/icons/coder.svg';
 function ButtonCoder() {
   return (
     <button className="buttonCoder">
-        <img className="buttonCoderImg"
+        <img id="buttonCoderImg"
             src={ CoderImg }
             alt="Logo"
         />
