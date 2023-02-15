@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "../molecule-filter/filter.css";
 import filterNameArtist from "../../../assets/img/icons/filter-name-artist.svg";
 
@@ -21,7 +21,11 @@ const Filter = () => {
 
   return (
     <div className="filter-container">
-      <img src={filterNameArtist} alt="Expand filter options" onClick={handleClick} />
+      <img
+        src={filterNameArtist}
+        alt="Expand filter options"
+        onClick={handleClick}
+      />
       {!isOpen && <p>Artist name</p>}
       {isOpen && (
         <div className="filter-options">
@@ -40,8 +44,7 @@ const Filter = () => {
           className="checkbox"
           id="played"
         />
-        <label className="checkbox-label"></label>
-          <p>Played songs</p>
+        <label className="checkbox-label">Played songs</label>
       </div>
       <div className="unplayed-checkbox-container">
         <input
