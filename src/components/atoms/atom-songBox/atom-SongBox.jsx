@@ -1,9 +1,13 @@
 import React from "react";
+import {useState, useEffect } from "react";
 import "./atom-songBox.css";
 import DeleteButton from "../atom-DeleteButton/Atom-DeleteButton.jsx";
 import UpdateButton from "../atom-updateButton/Atom-UpdateButton.jsx";
 import heart from "../../../assets/img/icons/heart.svg";
 import PlayButton from "../atom-playButton/atom-PlayButton";
+import ApiConsum from "../../../services/ApiConsum.jsx";
+
+const dataSongs = ApiConsum();
 
 const SongBox = (props) => {
   return (
