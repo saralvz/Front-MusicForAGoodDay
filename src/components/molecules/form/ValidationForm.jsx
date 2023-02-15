@@ -4,13 +4,44 @@ import '../form/form.css'
 
 const ValidationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
-  const customSubmit = (data) => {
-    alert('Validation passed')
+  const onSubmit = (data) => {
+  console.log(data)
+    const apiUrl = 'http://localhost:80/MusicForAGoodDay/songs/create';
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+
+    alert('Validation passed');
   }
+
+  // fetch(apiUrl, {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   },
+  //   body: JSON.stringify(data)
+  // })
+  //   .then(response => {
+  //     if (!response.ok) {
+  //       throw new Error('Network response was not ok');
+  //     }
+  //     alert('Validation passed and data was saved to the database!');
+  //   })
+  //   .catch(error => {
+  //     console.error('Error saving data:', error);
+  //     alert('An error occurred while saving data. Please try again later.');
+  //   });
+  
   return (
     <>
       <div className='container'>
-        <form onSubmit={handleSubmit(customSubmit)} className='form-react'>
+        <form onSubmit={handleSubmit(onSubmit)} className='form-react'>
           <div className='form-control' id='songs'>
             <label className='input-group'>Songs Name</label>
             <input className='input-group_label' type="text" {...register('songName', {required:true})} placeholder="Enter the Songs Name"/>
@@ -50,17 +81,3 @@ const ValidationForm = () => {
 
 export default ValidationForm
 
-const btn = document.getElementById('btn');
-
-btn.addEventListener('click', () => {
-  const apiUrl = 'http://localhost:80/MusicForAGoodDay/songs/create';
-  
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
-    });
-});
