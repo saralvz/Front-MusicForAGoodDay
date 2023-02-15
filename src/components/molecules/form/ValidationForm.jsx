@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import '../form/form.css'
 
+
 const ValidationForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm()
   const customSubmit = (data) => {
