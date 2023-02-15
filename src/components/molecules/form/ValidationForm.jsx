@@ -1,12 +1,31 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
-import '../upLoad/upLoad.css'
+import React from "react";
+import { useForm } from "react-hook-form";
+import "../form/form.css";
 
 const ValidationForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm()
-  const customSubmit = (data) => {
-    alert('Validation passed')
-  }
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    const apiUrl = "http://localhost:80/MusicForAGoodDay/songs/create";
+
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+
+    alert("Validation passed");
+  };
+
+
   return (
     <>
       <div className='container'>
