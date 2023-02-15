@@ -1,10 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "../form/form.css";
-import React, { startTransition } from 'react'
-import { useForm } from 'react-hook-form'
-import '../form/form.css'
-
 
 const ValidationForm = () => {
   const {
@@ -33,7 +29,7 @@ const ValidationForm = () => {
   return (
     <>
       <div className='container'>
-        <form onSubmit={handleSubmit(customSubmit)} className='form-react'>
+        <form onSubmit={handleSubmit(onSubmit)} className='form-react'>
           <div className='form-control' id='songs'>
             <label className='input-group'>Songs Name</label>
             <input className='input-group_label' type="text" {...register('songName', {required:true})} placeholder="Enter the Songs Name"/>

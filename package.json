@@ -9,10 +9,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.1",
-<<<<<<< HEAD
-=======
     "react-router-dom": "^6.8.1",
->>>>>>> 4fc939a0ea673f4e3446f4517f2d752839080583
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
