@@ -1,5 +1,4 @@
 import React from "react";
-import {useState, useEffect } from "react";
 import "./atom-songBox.css";
 import DeleteButton from "../atom-DeleteButton/Atom-DeleteButton.jsx";
 import UpdateButton from "../atom-updateButton/Atom-UpdateButton.jsx";
@@ -7,27 +6,31 @@ import heart from "../../../assets/img/icons/heart.svg";
 import PlayButton from "../atom-playButton/atom-PlayButton";
 import ApiConsum from "../../../services/ApiConsum.jsx";
 
-const dataSongs = ApiConsum();
 
-const SongBox = (props) => {
+
+const SongBox = () => {
+  const dataSongs = ApiConsum();
+
   return (
+  dataSongs.map((data) => (
+ 
     <div className="songContainer">
       <div className="cover">
-        <img src={props.image} alt="cover"></img>
+        <img src={data.img} alt="cover"></img>
       </div>
       <div className="text">
-        <p className="songName">{props.songName}Name</p>
-        <p className="artistName">{props.artistName}Artist</p>
-        <p className="gender">{props.songGender}Gender</p>
+        <p className="songName">{data.songName}Name</p>
+        <p className="artistName">{data.artist}Artist</p>
+        <p className="gender">{data.gender}Gender</p>
       </div>
       <div className="coder">
         <p>
           Proposed with <img src={heart} alt="heart" width="15px" /> by{" "}
-          {props.coderName} coder
+          {data.yourName} coder
         </p>
       </div>
       <div className="play">
-        <PlayButton src={props.play}/>
+        <PlayButton src={data.youTube}/>
       </div>
       <div className="optionsContainer">
         <div className="delete">
@@ -38,7 +41,7 @@ const SongBox = (props) => {
         </div>
       </div>
     </div>
-  );
+  )));
 };
 
 export default SongBox;
