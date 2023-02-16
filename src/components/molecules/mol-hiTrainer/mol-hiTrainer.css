@@ -1,0 +1,19 @@
+.hiTrainerContainer {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    /* background-color: rgb(10, 27, 27); */
+    justify-content: right;
+    align-items: center;
+}
+
+.hiTrainerText {
+    font-family: 'Consolas';
+    color: white;
+}
+
+.hiTrainerButton {
+    transform: scale(0.3);
+    margin-left: -4%;
+    margin-right: -2%;
+}

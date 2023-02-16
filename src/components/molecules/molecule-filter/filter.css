@@ -64,7 +64,7 @@ p {
 
 .filter-artist {
   background-color: #D9D9D9;
-  max-width: 25%;
+  max-width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ p {
 
 .filter-played {
   background-color: #D9D9D9;
-  max-width: 25%;
+  max-width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,7 @@ p {
 
 .filter-unplayed {
   background-color: #D9D9D9;
-  max-width: 25%;
+  max-width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;

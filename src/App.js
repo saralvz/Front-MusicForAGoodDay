@@ -5,6 +5,7 @@ import Header from './components/atoms/atom-Header/Atom-Header';
 import Profile from './components/pages/profile/Profile';
 import Coder from './components/pages/coder/Coder';
 import Trainer from './components/pages/trainer/Trainer';
+import Footer from './components/atoms/atom-Footer/Atom-Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="*" element={<Profile />} />
       </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
