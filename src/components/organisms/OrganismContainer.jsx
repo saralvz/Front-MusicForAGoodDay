@@ -10,9 +10,6 @@ import ValidationForm from "../molecules/form/ValidationForm";
 const OrganismContainer = () => {
     return (
       <div>
-        <Link to="/Profile">
-          <HiTrainer />
-        </Link>
         <div className="organism-container">
           <div className="content-wrapper">
             <h2 id="form-title">
@@ -20,7 +17,6 @@ const OrganismContainer = () => {
             </h2>
             <ValidationForm/>
             <Filter />
-            <SongBox/>
             <SongBox/>
           </div>
         </div>

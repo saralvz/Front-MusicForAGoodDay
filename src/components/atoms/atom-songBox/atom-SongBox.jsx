@@ -17,8 +17,8 @@ const SongBox = (props) => {
         <p className="gender">{props.songGender}Gender</p>
       </div>
       <div className="coder">
-        <p>
-          Proposed with <img src={heart} alt="heart" width="15px" /> by{" "}
+        <p className="coder-text">
+          Proposed with ♥ by{" "}
           {props.coderName} coder
         </p>
       </div>
