@@ -1,0 +1,85 @@
+.songContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    height: 40%; 
+}
+
+.coder {
+    width: 35%;
+    font-family: "Consolas";
+    font-size: 0.2em;
+    color: #2E315B;
+    display: flex;
+    align-items: center;  
+  }
+
+.coder-text {
+    font-size: 3em;
+}
+
+.coder img {
+    height: 1em;
+    margin-left: -1em;
+}
+
+.cover{
+    background-color: black;
+    height: 4.5em;
+    width: 4.5em;
+    align-self: center;
+    justify-self: center;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.optionsContainer{
+    display: flex;
+    flex-direction: column;
+    background-color:#D9D9D9;
+    justify-content: space-around;
+    width: 11%;
+}
+
+.delete{
+    transform: scale(0.4);
+}
+
+.update{
+    transform: scale(0.4);
+    margin-top: -100%;
+}
+
+.text {
+    margin-left: -8%;
+    font-family: "Consolas";
+    color:#2E315B;
+    align-self: center;
+}
+
+.songName{
+    margin-bottom: 0.7em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.artistName{
+    margin-bottom: 0.2em;
+    margin-top: 0.4em;
+    font-size: 0.8em;
+}
+
+.gender{
+    margin-top: 0.2em;
+    font-size: 0.8em;
+}
+
+.play{
+    background-color: #D9D9D9;
+}
+
+.delete {
+    margin-bottom: 2.5rem;
+    }
+    

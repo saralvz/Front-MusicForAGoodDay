@@ -1,0 +1,12 @@
+.containerFooter {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    bottom: 20px;
+}
+
+#textFooter {
+    font-family: 'Consolas';
+    color: white;
+    text-align: center;
+}
