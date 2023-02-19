@@ -21,22 +21,25 @@ const Filter = () => {
 
   return (
     <div className="filter-container">
-      <img
-        src={filterNameArtist}
-        alt="Expand filter options"
-        onClick={handleClick}
-      />
-      {!isOpen && <p>Artist name</p>}
-      {isOpen && (
-        <div className="filter-options">
-          <input
-            type="text"
-            placeholder="Search by artist"
-            className="filter-input"
-          />
-        </div>
-      )}
-      <div className="played-checkbox-container">
+      <div className="filter-artist">
+        <img id="filter-artist"
+          src={filterNameArtist}
+          alt="Expand filter options"
+          onClick={handleClick}
+        />
+        {!isOpen && <p>Artist name</p>}
+        {isOpen && (
+          <div className="filter-options">
+            <input
+              type="text"
+              placeholder="Search by artist"
+              className="filter-input"
+            />
+          </div>
+        )}
+      </div>
+
+      <div className="filter-played">
         <input
           type="checkbox"
           checked={isPlayedChecked}
@@ -46,7 +49,8 @@ const Filter = () => {
         />
         <label className="checkbox-label">Played songs</label>
       </div>
-      <div className="unplayed-checkbox-container">
+
+      <div className="filter-unplayed">
         <input
           type="checkbox"
           checked={isUnplayedChecked}

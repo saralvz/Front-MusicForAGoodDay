@@ -7,13 +7,6 @@ import { Link } from "react-router-dom";
 function Profile() {
   return (
     <div className="containerProfile">
-        <div className="rowHeaderProfile">
-            <img className="rowHeaderProfileLogo"
-                src={ LogoCT }
-                alt="Logo City Tech"
-            />
-        </div>
-
         <div className="rowUsersProfile">
             <div className="rowUserProfileTrainer">
             <Link to="/trainer">
@@ -31,12 +24,6 @@ function Profile() {
                 </h3>
             </Link>     
             </div>
-        </div>
-
-        <div className="rowFooter">
-            <p className="rowFooterText">
-                with ❤ by Code Tech
-            </p>
         </div>
     </div>
   )
