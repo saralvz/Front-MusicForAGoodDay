@@ -1,8 +1,8 @@
 # MusicForAGoodDay :notes:
-This project consists of the development of a platform to manage songs to say good morning to coders. 
-***
 
-## Screenshots :desktop_computer:
+***
+This project consists of the development of a platform to manage songs to say good morning to coders. 
+
 
 ## Stack :electric_plug:
 * **HTML** - basic structure
