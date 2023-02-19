@@ -8,6 +8,7 @@ import Trainer from './components/pages/trainer/Trainer';
 import Footer from './components/atoms/atom-Footer/Atom-Footer';
 
 
+
 function App() {
   return (  
     <div className="App">
